@@ -10,11 +10,16 @@
             <a-assets>
                 <a-asset-item
                     id="fox-asset"
-                    src="/models/fox.gltf"
+                    src="models/fox.gltf"
                 ></a-asset-item>
             </a-assets>
 
-            <a-marker id="fox-marker" preset="hiro">
+            <a-marker
+                id="fox-marker"
+                preset="custom"
+                type="pattern"
+                url="markers/fox.patt"
+            >
                 <a-entity
                     id="fox"
                     gltf-model="#fox-asset"

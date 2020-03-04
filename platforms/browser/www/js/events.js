@@ -1,4 +1,4 @@
-trees = { "fox-marker": "temp.html" };
+trees = { "#fox-marker": "temp.html" };
 
 AFRAME.registerComponent("accepts-clicks", {
     init: function() {
