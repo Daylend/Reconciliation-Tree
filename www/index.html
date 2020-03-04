@@ -8,17 +8,17 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded arjs cursor="rayOrigin: mouse" accepts-clicks>
             <a-assets>
-                <a-asset-item id="fox-asset" src="fox.gltf"></a-asset-item>
+                <a-asset-item
+                    id="fox-asset"
+                    src="/models/fox.gltf"
+                ></a-asset-item>
             </a-assets>
 
             <a-marker id="fox-marker" preset="hiro">
                 <a-entity
                     id="fox"
-                    obj-model="obj: #fox-asset;"
-                    material="color: green"
-                    rotation="0 180 0"
-                    position="0 0 0.5"
-                    scale="0.15 0.15 0.15"
+                    gltf-model="#fox-asset"
+                    scale="0.01 0.01 0.01"
                 ></a-entity>
             </a-marker>
 
