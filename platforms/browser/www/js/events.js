@@ -1,20 +1,28 @@
-AFRAME.registerComponent("markerhandler", {
+AFRAME.registerComponent("accepts-clicks", {
     init: function() {
-        const animatedMarker = document.querySelector("#animated-marker");
-        const aEntity = document.querySelector("#animated-model");
-
-        // every click, we make our model grow in size :)
-        animatedMarker.addEventListener("click", function(ev, target) {
-            alert("AAAAAAAAAAAAH");
-            const intersectedElement =
-                ev && ev.detail && ev.detail.intersectedEl;
-            if (aEntity && intersectedElement === aEntity) {
-                const scale = aEntity.getAttribute("scale");
-                Object.keys(scale).forEach(
-                    key => (scale[key] = scale[key] + 0.01)
-                );
-                aEntity.setAttribute("scale", scale);
-            }
-        });
+        this.el.addEventListener("touchend", handleClickEvent);
+        this.el.addEventListener("click", handleClickEvent);
     }
 });
+
+function handleClickEvent() {
+    alert("AHHHHHHHHHHH");
+    /*builders.forEach(function(builder) {
+      var builderMarker = document.querySelector("#" + builder.name + "-marker");
+      if (builderMarker && builderMarker.object3D.visible) {
+        if (searchForBuilderTool(builder)){
+          toggleSpeechBubble(builder.successDialogue);
+        } else {
+          toggleSpeechBubble(builder.dialogue);
+        }
+      }
+    });
+  
+    tools.forEach(function(tool){
+      var toolMarker = document.querySelector("#" + tool.name + "-marker");
+      if (toolMarker && toolMarker.object3D.visible) {
+        toggleSpeechBubble(tool.dialogue);
+        if (!userState.hasBuilderTool(tool)) userState.addTool(tool);
+      }
+    });*/
+}

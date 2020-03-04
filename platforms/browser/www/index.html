@@ -6,24 +6,20 @@
     <script src="js/events.js"></script>
     <body style="margin : 0px; overflow: hidden;">
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene embedded arjs="sourceType: webcam; trackingMethod: best;">
+        <a-scene embedded arjs cursor="rayOrigin: mouse" accepts-clicks>
             <a-assets>
-                <a-asset-item id="animated-asset" src="fox.gltf"></a-asset-item>
+                <a-asset-item id="fox-asset" src="fox.gltf"></a-asset-item>
             </a-assets>
 
-            <a-marker
-                markerhandler
-                emitevents="true"
-                cursor="rayOrigin: mouse"
-                id="animated-marker"
-                preset="hiro"
-            >
+            <a-marker id="fox-marker" preset="hiro">
                 <a-entity
-                    id="animated-model"
-                    gltf-model="#animated-asset"
-                    scale="0.01 0.01 0.01"
-                >
-                </a-entity>
+                    id="fox"
+                    obj-model="obj: #fox-asset;"
+                    material="color: green"
+                    rotation="0 180 0"
+                    position="0 0 0.5"
+                    scale="0.15 0.15 0.15"
+                ></a-entity>
             </a-marker>
 
             <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
