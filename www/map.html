@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+        />
+        <title>Blank App</title>
+        <link rel="stylesheet" href="./css/maps.css" />
+    </head>
+    <body>
+        <iframe
+            class="gmaps"
+            src="https://www.google.com/maps/d/u/0/embed?mid=1CSQEA9kV0ZrNwccmuJUGYyffovKlze02"
+            width="100%"
+        ></iframe>
+        <script type="text/javascript" language="javascript">
+            document.querySelector(".gmaps").height = window.innerHeight * 0.97;
+        </script>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
