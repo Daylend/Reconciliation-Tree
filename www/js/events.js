@@ -1,4 +1,10 @@
-trees = { "#fox-marker": "temp.html" };
+trees = {
+    "fox-marker": "map.html",
+    "scotspine-marker": "scotspine.html",
+    "sargentpolar-marker": "sargentpolar.html",
+    "goldenwillow-marker": "goldenwillow.html",
+    "saskatoonbush-marker": "saskatoonbush.html"
+};
 
 AFRAME.registerComponent("accepts-clicks", {
     init: function() {
@@ -8,8 +14,13 @@ AFRAME.registerComponent("accepts-clicks", {
 });
 
 function handleClickEvent() {
-    var fox = document.querySelector("#fox-marker");
-    if (fox && fox.object3D.visible) {
-        alert("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
+    // Select all -marker elements and check if they're visible
+    var markers = document.querySelectorAll("[id$='-marker']");
+    for (i = 0; i < markers.length; i++) {
+        if (markers[i] && markers[i].object3D.visible) {
+            // Look up the href using marker id in trees dict
+            var id = markers[i].id;
+            location.href = trees[id];
+        }
     }
 }
