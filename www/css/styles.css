@@ -3,6 +3,7 @@ body {
 	margin: 0 auto;
 }
 
+/*
 .preloaders {
 	align-items: center;
 	background: rgb(23, 22, 22);
@@ -16,6 +17,7 @@ body {
 	width: 100%;
 	z-index: 9999;
 }
+*/
 
 /*FLIP CARDS*/
 .page1-content,
@@ -30,11 +32,11 @@ body {
 }
 
 .page1-content {
-	background-image: url("/www/imgs/bison.png");
+	background-image: url("../imgs/bison.png");
 }
 
 .page2-content {
-	background-image: url("/www/imgs/bison.png");
+	background-image: url("../imgs/bison.png");
 	position: fixed;
 }
 
@@ -75,8 +77,8 @@ img {
 
 .exit {
 	grid-area: a;
-	width: 8%;
-	margin-left: 0.5em;
+	width: 6%;
+/*	margin-left: 0.5em;*/
 	padding: 3px;
 	background-color: #f1e2b3;
 	border-color: #f1e2b3;
@@ -104,17 +106,37 @@ img {
 
 .plant_info {
 	grid-area: e;
-	grid-column: 4;
+	grid-column: 2;
 	padding: 0 20px;
 	font-size: 1em;
 }
 
 .video {
 	grid-area: f;
+	background-color: antiquewhite;
 	width: 100%;
-	padding: 20px;
 	justify-content: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
 }
+
+.video {
+	background-color: black;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding:20px;
+	width: 90%;
+	height: 23vh;
+	top: 0; 
+	vertical-align: middle;
+	margin-left: 1.5em;
+}
+.vid{
+	margin-top: 10em;
+		vertical-align: middle;
+
+}
+
 
 .r-flip {
 	grid-area: g;
@@ -171,10 +193,12 @@ img {
 }
 
 .footer {
+	position: fixed;
+	bottom: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	margin-top: 3em;
+	/*	margin-top: 3em;*/
 	/*    background-color: aqua; */
 	/*    max-height: 100px; */
 }
