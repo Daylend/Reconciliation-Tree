@@ -301,35 +301,60 @@ h3 {
 	grid-template-columns: (3, 1fr);
 	grid-template-rows: 30px, 400px, 50px, 30px, 30px, 30px;
 	padding: 20px;
+	grid-template-areas:
 
 }
 
 .content_home {
 	display: grid;
-	grid-template-columns: (3fr);
+	grid-template-columns: (4, 1fr);
+	grid-template-rows: 300px 100px 100px;
 	padding: 20px;
 	text-align: center;
 	padding-top: 100px;
+	grid-template-areas:
+		"a a a a"
+		". b b ."
+		"c c d d";
+
 }
 
-.what_header {
+.what {
+		font-family: 'Roboto Condensed', sans-serif;
+
 	grid-area: a;
-	grid-column: 1;
+	grid-row: 1;
+}
+
+.who_header{
+		font-family: 'Roboto Condensed', sans-serif;
+
+	text-align: center; 
+	grid-area: b;
 	grid-row: 2;
 }
 
-.why_header {
-	grid-area: b;
-	grid-column: 3;
+.who1 {
+	grid-area: c;
+	grid-column: 2; 
 	grid-row: 3;
 
 }
 
-.who_header {
-	grid-area: c;
-	grid-row: 4;
+.who2 {
+	grid-area: d;
+	grid-column: 3; 
+	grid-row: 3;
+	
 }
 
+/*
+.who_para{
+	display: flex; 
+	flex-direction: column; 
+	flex: 2; 
+}
+*/
 .footer {
 	position: fixed;
 	bottom: 0;
