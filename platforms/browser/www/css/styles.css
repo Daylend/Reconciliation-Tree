@@ -59,7 +59,7 @@ body {
 	background-image: url("../imgs/bf-bg.png");
 }
 
-.page2-content {
+.page2-content, .page4-content, .page6-content, .page8-content {
 	background-image: url("../imgs/eng-bg.png");
 	position: fixed;
 }
@@ -135,6 +135,15 @@ img {
 	grid-row: 4;
 	padding: 0px;
 	font-size: 1em;
+	text-align: center;
+}
+
+.pronounce-bft{
+	grid-area: d;
+	grid-row: 4;
+	padding: 0px;
+	font-size: 1em;
+	margin-top: -0.7em;
 	text-align: center;
 }
 
