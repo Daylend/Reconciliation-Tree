@@ -20,9 +20,9 @@ body {
 */
 
 .logo {
-	width: 70%;
+	width: 65%;
 	margin: 0 auto;
-	margin-top: 5em;
+	margin-top: 12.5em;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -31,7 +31,7 @@ body {
 /*FLIP CARDS*/
 .homepage-content,
 .page1-content,
-.page2-content {
+.page2-content, .page9-content {
 	overflow: scroll;
 	position: fixed;
 	width: auto;
@@ -62,7 +62,7 @@ body {
     background-image: url("/www/imgs/bison.png");
     position: fixed; 
 */
-	background-color: cornsilk;
+	background-color: antiquewhite;
 	width: 100%;
 	height: 100vh;
 	background-size: cover;
@@ -84,7 +84,7 @@ img {
 	width: 80%;
 	max-height: 100vh;
 	grid-template-areas:
-		"a . ."
+		". . a"
 		". b ."
 		". c ."
 		". d ."
@@ -93,14 +93,16 @@ img {
 		"g . h";
 }
 
-.exit {
-	grid-area: a;
-	grid-row: 1;
+.about_button{
+	float: right; 
 	width: 10%;
-	margin-left: 0.5em;
+	margin-right: 1.5em;
 	padding: 10px;
-	background-color: #f1e2b3;
-	border-color: #f1e2b3;
+}
+.exit {
+	width: 15%;
+	margin-right: 1.5em;
+	padding: 10px;
 }
 
 .plant {
@@ -157,7 +159,7 @@ h3 {
 
 .r-flip {
 	grid-area: g;
-	width: 18%;
+	width: 14%;
 	margin-left: 17em;
 	padding: 5px;
 	max-width: 50%;
@@ -180,7 +182,13 @@ h3 {
 .title_about {
 	font-family: 'Roboto Condensed', sans-serif;
 	text-align: center;
-	font-size: 5em;
+	font-size: 4em;
+	color: #3a2813; 
+}
+.logo_agility{
+	width: 20%; 
+	margin: 0 auto;
+	margin-top: -0.7em;
 }
 
 .content_about {
@@ -222,7 +230,7 @@ h3 {
 	bottom: 0;
 	width: 100%;
 	display: flex;
-	padding: 10px;
+	padding: 8px;
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: #3a2813;
@@ -236,10 +244,6 @@ h3 {
 	margin-right: 3em;
 }
 
-.button_scanner {
-}
-
-
 .size-40 {
 	font-size: 40px;
 	color: antiquewhite;
@@ -251,7 +255,14 @@ h3 {
 	color: antiquewhite;
 
 }
+.size-37 {
+	font-size: 37px;
+	color:  #3a2813; 
+}
+
 
 iframe{
 	width:100%; 
 }
+
+
