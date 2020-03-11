@@ -1,6 +1,6 @@
-$(document).ready(function () {
-    $(".preloaders").delay(1700).fadeOut(700);
-});
+//$(document).ready(function () {
+//    $(".preloaders").delay(1700).fadeOut(700);
+//});
 
 var app = new Framework7({
 	root: '#app',
@@ -48,12 +48,18 @@ var app = new Framework7({
         {
 			path: '/page10/',
 			url: 'pages/page10.html'
-        }, 
+        },         
+//		{
+//			path: '/map/',
+//			url: 'pages/map.html'
+//        }, 
 		
     ]
 })
 
-var mainView = app.views.create(".view-main");
+var mainView = app.views.create(".view-main",{
+	 domCache: true; 
+});
 
 console.log("bonjour");
 

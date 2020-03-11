@@ -249,4 +249,9 @@ h3 {
 .size-45 {
 	font-size: 45px;
 	color: antiquewhite;
+
+}
+
+iframe{
+	width:100%; 
 }
