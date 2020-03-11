@@ -1,3 +1,4 @@
+
 var app = new Framework7({
 	root: '#app',
 	routes: [
@@ -62,4 +63,10 @@ var mainView = app.views.create(".view-main");
 console.log("bonjour");
 
 var $$ = Dom7;
+
+var audio = new Audio('audio/oki.wav');
+
+function playAudio() {
+	audio.play();
+}
 

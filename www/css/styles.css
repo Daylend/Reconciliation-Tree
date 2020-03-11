@@ -31,7 +31,14 @@ body {
 /*FLIP CARDS*/
 .homepage-content,
 .page1-content,
-.page2-content, .page9-content {
+.page2-content,
+.page3-content,
+.page4-content,
+.page5-content,
+.page6-content,
+.page7-content,
+.page8-content,
+.page9-content {
 	overflow: scroll;
 	position: fixed;
 	width: auto;
@@ -48,7 +55,7 @@ body {
 
 }
 
-.page1-content {
+.page1-content, .page3-content, .page5-content, .page7-content {
 	background-image: url("../imgs/bf-bg.png");
 }
 
@@ -82,7 +89,7 @@ img {
 	background-color: #f1e2b3;
 	margin-top: 30px;
 	width: 80%;
-	max-height: 100vh;
+	max-height: 200vh;
 	grid-template-areas:
 		". . a"
 		". b ."
@@ -110,7 +117,7 @@ img {
 	grid-column: 2;
 	margin-top: -50px;
 	padding: 0px 20px 0px;
-	width: 100%;
+	width: 50%;
 	margin: 0 auto;
 }
 
@@ -118,6 +125,7 @@ img {
 	grid-area: c;
 	grid-column: 3;
 	padding: 0px;
+	margin-top: -1em;
 	font-family: 'Roboto Condensed', sans-serif;
 	text-align: center;
 }

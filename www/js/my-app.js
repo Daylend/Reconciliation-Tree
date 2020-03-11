@@ -65,8 +65,12 @@ console.log("bonjour");
 var $$ = Dom7;
 
 var audio = new Audio('audio/oki.wav');
+var audio2 = new Audio('audio/pinus.wav');
 
 function playAudio() {
 	audio.play();
+}
+function playAudio2() {
+	audio2.play();
 }
 
