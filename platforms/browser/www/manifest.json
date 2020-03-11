@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "helloworld",
-  "short_name": "helloworld",
-  "version": "com.phonegap.helloworld",
-  "description": "A blank PhoneGap app.",
-  "author": "PhoneGap Team",
+  "name": "PhoneGap Example",
+  "short_name": "PhoneGap Example",
+  "version": "com.phonegap.example",
+  "description": "An example for phonegap build docs.",
+  "author": "Hardeep Shoker",
   "icons": [],
   "start_url": "index.html"
 }
