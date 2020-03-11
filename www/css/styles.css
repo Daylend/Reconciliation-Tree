@@ -138,6 +138,15 @@ img {
 	text-align: center;
 }
 
+.pronounce-bft{
+	grid-area: d;
+	grid-row: 4;
+	padding: 0px;
+	font-size: 1em;
+	margin-top: -0.7em;
+	text-align: center;
+}
+
 .plant_info {
 	grid-area: e;
 	grid-column: 2;
