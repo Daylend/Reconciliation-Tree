@@ -59,7 +59,7 @@ body {
 	background-image: url("../imgs/bf-bg.png");
 }
 
-.page2-content {
+.page2-content, .page4-content, .page6-content, .page8-content {
 	background-image: url("../imgs/eng-bg.png");
 	position: fixed;
 }

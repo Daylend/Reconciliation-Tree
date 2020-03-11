@@ -66,11 +66,23 @@ var $$ = Dom7;
 
 var audio = new Audio('audio/oki.wav');
 var audio2 = new Audio('audio/pinus.wav');
+var audio4 = new Audio('audio/amelan.wav');
+var audio6 = new Audio('audio/popu.wav');
+var audio8 = new Audio('audio/salix.wav');
 
 function playAudio() {
 	audio.play();
 }
 function playAudio2() {
 	audio2.play();
+}
+function playAudio4() {
+	audio4.play();
+}
+function playAudio6() {
+	audio6.play();
+}
+function playAudio8() {
+	audio8.play();
 }
 
