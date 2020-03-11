@@ -244,6 +244,11 @@ h3 {
 	margin-right: 3em;
 }
 
+.size-20 {
+	font-size: 20px;
+	color: black;
+
+}
 .size-40 {
 	font-size: 40px;
 	color: antiquewhite;
@@ -265,4 +270,10 @@ iframe{
 	width:100%; 
 }
 
+.hello{
+	background-color: #f1e2b3;
+	border-color: #f1e2b3; 
+	border-width: 0px; 
+	width: 10%; 
+}
 

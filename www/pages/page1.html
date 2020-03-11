@@ -44,7 +44,21 @@
 								<h1>PINE</h1>
 							</div>
 							<div class="pronounce">
-								<p> i’nssimaa vai</p>
+								<p> i’nssimaa vai
+									
+<!--
+									<input type="button" value="listen" id="button">
+										<audio id="audio" src="audio/oki.wav"></audio>
+-->
+
+									<audio id="myAudio" src="/www/audio/oki.wav">
+									</audio>
+									<button class="hello" onclick="playAudio()" type="button">
+										<i class="icon f7-icons size-20">speaker_2
+										</i>
+									</button>
+								</p>
+
 							</div>
 							<div class="plant_info">
 								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
@@ -64,6 +78,17 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		var x = document.getElementById("myAudio");
+
+		function playAudio() {
+			x.play();
+		}
+
+		function pauseAudio() {
+			x.pause();
+		}
+	</script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/js/framework7.min.js"></script>
@@ -76,6 +101,4 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 	<script src="js/my-app.js"></script>
-</body>
-
-</html>
+</body></html>
