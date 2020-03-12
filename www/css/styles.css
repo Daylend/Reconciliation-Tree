@@ -22,7 +22,8 @@ body {
 .page6-content,
 .page7-content,
 .page8-content,
-.page9-content {
+.page9-content, 
+.page11-content{
 	overflow: scroll;
 	position: fixed;
 	width: auto;
@@ -64,7 +65,7 @@ body {
 	padding-top: 5px;
 	margin-top: -1em;
 	margin-left: 3em;
-	color: brown; 
+	color: brown;
 }
 
 .no1 {
@@ -175,6 +176,15 @@ body {
 	overflow: scroll;
 }
 
+.page11-content {
+	background-image: url("../imgs/home5.png");
+	width: 100%;
+	margin: 0 auto;
+	height: 100vh;
+	position: fixed;
+	background-size: cover;
+	overflow: scroll;
+}
 
 img {
 	width: 100%;
@@ -209,7 +219,7 @@ img {
 }
 
 .exit {
-	width: 20%;
+	width: 12%;
 	margin-right: 1.5em;
 	padding: 10px;
 }
@@ -233,7 +243,7 @@ img {
 	grid-area: c;
 	grid-column: 3;
 	padding: 0px;
-	margin-top: -1em;
+	margin-top: -2em;
 	font-family: 'Roboto Condensed', sans-serif;
 	text-align: center;
 }
@@ -253,6 +263,11 @@ img {
 	font-size: 1em;
 	margin-top: -0.7em;
 	text-align: center;
+}
+.plant_img{
+	width: 100%;
+	margin-top: -5em; 
+	margin: 0 auto; 
 }
 
 .plant_info {
@@ -427,4 +442,21 @@ iframe {
 	border-color: #f1e2b3;
 	border-width: 0px;
 	width: 10%;
+}
+
+/*ALL PLANTS*/
+.all_cards{
+	display: grid;
+	grid-template-columns: (2, 1fr);
+	grid-template-rows: 200px 40px;
+	grid-template-areas:
+		"1 2"
+		"3 4";
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0 auto;
+	width: 80%;
+	/*	color: antiquewhite; */
+	color: #3a2813;
+
 }

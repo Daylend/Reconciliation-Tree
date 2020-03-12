@@ -45,12 +45,11 @@ var app = new Framework7({
 		{
 			path: '/page10/',
 			url: 'pages/page10.html'
-        },
-//		{
-//			path: '/map/',
-//			url: 'pages/map.html'
-//        }, 
-
+        },		
+		{
+			path: '/page11/',
+			url: 'pages/page11.html'
+        }
     ]
 })
 var mainView = app.views.create(".view-main");
