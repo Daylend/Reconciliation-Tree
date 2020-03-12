@@ -48,6 +48,10 @@ var app = new Framework7({
         {
             path: "/page11/",
             url: "pages/page11.html"
+        },
+        {
+            path: "/ar/",
+            url: "arwrapper.html"
         }
     ]
 });
