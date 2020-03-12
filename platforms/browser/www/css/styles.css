@@ -300,7 +300,7 @@ h3 {
 .r-flip {
 	grid-area: g;
 	width: 14%;
-	margin-left: 17em;
+	margin-left: 20em;
 	padding: 5px;
 	max-width: 50%;
 	object-fit: cover;
