@@ -57,7 +57,7 @@ body {
 
 }
 
-.date{
+.date {
 	grid-area: k;
 	grid-row: 1;
 	font-weight: lighter;
@@ -74,9 +74,8 @@ body {
 	text-align: right;
 	padding-right: 10px 10px;
 	font-weight: 900;
-	font-size: 2em;
+	font-size: 1.8em;
 	color: brown;
-		opacity: 0.8;
 
 
 }
@@ -96,9 +95,9 @@ body {
 	text-align: right;
 	padding-right: 10px 10px;
 	font-weight: 900;
-	font-size: 2em;
+	font-size: 1.8em;
 	color: brown;
-		opacity: 0.8;
+	opacity: 0.8;
 
 }
 
@@ -117,9 +116,8 @@ body {
 	text-align: right;
 	padding-right: 10px 10px;
 	font-weight: 900;
-	font-size: 2em;
+	font-size: 1.8em;
 	color: brown;
-	
 
 }
 
@@ -138,7 +136,7 @@ body {
 	text-align: right;
 	padding-right: 10px 10px;
 	font-weight: 900;
-	font-size: 2em;
+	font-size: 1.8em;
 	color: brown;
 
 }
