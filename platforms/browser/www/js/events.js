@@ -1,9 +1,8 @@
 trees = {
-    "fox-marker": "map.html",
-    "scotspine-marker": "scotspine.html",
-    "sargentpolar-marker": "sargentpolar.html",
-    "goldenwillow-marker": "goldenwillow.html",
-    "saskatoonbush-marker": "saskatoonbush.html"
+    "lodgepole-marker": "page1",
+    "saskatoonbush-marker": "page3",
+    "sargentpoplar-marker": "page5",
+    "goldenwillow-marker": "page7"
 };
 
 AFRAME.registerComponent("accepts-clicks", {
@@ -20,7 +19,8 @@ function handleClickEvent() {
         if (markers[i] && markers[i].object3D.visible) {
             // Look up the href using marker id in trees dict
             var id = markers[i].id;
-            location.href = trees[id];
+            //app.views.main.router.navigate("/" + trees[id] + "/");
+            location.href = "pages/" + trees[id] + ".html";
         }
     }
 }
