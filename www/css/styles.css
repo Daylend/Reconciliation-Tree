@@ -11,8 +11,9 @@ body {
 	justify-content: center;
 	text-align: center;
 }
-h4{
-font-weight: bold;
+
+h4 {
+	font-weight: bold;
 }
 
 /*FLIP CARDS*/
@@ -25,8 +26,8 @@ font-weight: bold;
 .page6-content,
 .page7-content,
 .page8-content,
-.page9-content, 
-.page11-content{
+.page9-content,
+.page11-content {
 	overflow: scroll;
 	position: fixed;
 	width: auto;
@@ -194,16 +195,16 @@ img {
 
 .card-inner {
 	display: grid;
-	position: relative; 
+	position: relative;
 	grid-template-columns: (3, 1fr);
-/*	grid-template-rows: 10px, 200px, 30px, 30px, 30px, 30px;*/
+	/*	grid-template-rows: 10px, 200px, 30px, 30px, 30px, 30px;*/
 	grid-row-gap: 1px;
 	margin: 0 auto;
 	justify-content: center;
 	background-color: #f1e2b3;
 	margin-top: 30px;
 	width: 80%;
-	padding-bottom: 10vw; 
+	padding-bottom: 10vw;
 	max-height: 100vh;
 	grid-template-areas:
 		". . a"
@@ -215,15 +216,16 @@ img {
 		"g . h";
 }
 
-.top_nav{
-	display: flex; 
-	flex-direction: row; 
-	justify-content: space-between; 
-	position: relative; 
-	padding: 10px; 
+.top_nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	padding: 10px;
 }
+
 .about_button {
-	text-align: right; 
+	text-align: right;
 	float: right;
 }
 
@@ -238,9 +240,10 @@ img {
 	margin-right: 1.5em;
 	padding: 15px;
 }
-.stack{
-	text-align: left; 
-	float: left; 
+
+.stack {
+	text-align: left;
+	float: left;
 }
 
 .plant {
@@ -277,20 +280,27 @@ img {
 	margin-top: -0.7em;
 	text-align: center;
 }
-.plant_img{
+
+.plant_img {
 	width: 100%;
-	margin-top: -5em; 
-	margin: 0 auto; 
+	margin-top: -5em;
+	padding-bottom: 2vw;
+	margin: 0 auto;
 }
+
 .plant_img2 {
 	width: 50%;
 	margin: 0 auto;
+	padding-bottom: 2vw;
+
 }
 
 .plant_img3 {
 	margin-top: 5em;
 	width: 60%;
 	margin: 0 auto;
+	padding-bottom: 2vw;
+
 }
 
 .plant_info {
@@ -321,10 +331,10 @@ h3 {
 }
 
 .r-flip {
-/*	grid-area: g;*/
-	position: absolute; 
-	text-align: right; 
-	right: 0; 
+	/*	grid-area: g;*/
+	position: absolute;
+	text-align: right;
+	right: 0;
 	width: 14%;
 	margin-left: 20em;
 	padding: 5px;
@@ -423,6 +433,7 @@ h3 {
 	font-size: 25px;
 	color: black;
 }
+
 .size-30 {
 	font-size: 30px;
 	color: #3a2813;
@@ -445,6 +456,7 @@ h3 {
 	color: antiquewhite;
 
 }
+
 .size-46 {
 	font-size: 46px;
 	color: brown;
