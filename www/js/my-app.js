@@ -65,7 +65,7 @@ console.log("bonjour");
 
 var $$ = Dom7;
 
-var audio = new Audio("audio/oki.wav");
+var audio = new Audio("../audio/oki.wav");
 var audio2 = new Audio("audio/pinus.wav");
 var audio4 = new Audio("audio/amelan.wav");
 var audio6 = new Audio("audio/popu.wav");

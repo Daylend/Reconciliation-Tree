@@ -194,15 +194,17 @@ img {
 
 .card-inner {
 	display: grid;
+	position: relative; 
 	grid-template-columns: (3, 1fr);
-	grid-template-rows: 10px, 200px, 30px, 30px, 30px, 30px;
+/*	grid-template-rows: 10px, 200px, 30px, 30px, 30px, 30px;*/
 	grid-row-gap: 1px;
 	margin: 0 auto;
 	justify-content: center;
 	background-color: #f1e2b3;
 	margin-top: 30px;
 	width: 80%;
-	max-height: 180vh;
+	padding-bottom: 10vw; 
+	max-height: 100vh;
 	grid-template-areas:
 		". . a"
 		". b ."
@@ -319,25 +321,16 @@ h3 {
 }
 
 .r-flip {
-	grid-area: g;
+/*	grid-area: g;*/
+	position: absolute; 
+	text-align: right; 
+	right: 0; 
 	width: 14%;
 	margin-left: 20em;
 	padding: 5px;
 	max-width: 50%;
 	object-fit: cover;
 }
-
-.l-flip {
-	grid-area: h;
-	width: 10%;
-	padding: 5px;
-	margin-left: 1em;
-	background-color: #f1e2b3;
-	border-color: #f1e2b3;
-	max-width: 50%;
-	object-fit: cover;
-}
-
 
 /*ABOUT PAGE*/
 .title_about {
