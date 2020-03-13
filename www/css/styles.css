@@ -213,6 +213,13 @@ img {
 		"g . h";
 }
 
+.top_nav{
+		display: grid; 
+	grid-template-columns: (2, 1fr);
+	grid-template-rows: 10px;
+	grid-template-areas:
+		"stack about"; 
+}
 .about_button {
 	float: right;
 	width: 10%;
@@ -410,6 +417,10 @@ h3 {
 .size-25 {
 	font-size: 25px;
 	color: black;
+}
+.size-30 {
+	font-size: 30px;
+	color: #3a2813;
 }
 
 .size-40 {
