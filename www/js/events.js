@@ -20,7 +20,7 @@ function handleClickEvent() {
             // Look up the href using marker id in trees dict
             var id = markers[i].id;
             //app.views.main.router.navigate("/" + trees[id] + "/");
-            location.href = "pages/" + trees[id] + ".html";
+            window.top.location = "pages/" + trees[id] + ".html";
         }
     }
 }

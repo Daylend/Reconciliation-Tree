@@ -9,7 +9,7 @@ width=device-width, height=device-height, target-densitydpi=device-dpi"
         />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
-        <title>HOME</title>
+        <title>AR Portal</title>
 
         <link
             href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
@@ -44,7 +44,6 @@ width=device-width, height=device-height, target-densitydpi=device-dpi"
         <script src="jquery-1.11.2.min.js" type="text/javascript"></script>
         <link rel="stylesheet" href="path/to/framework7-icons.css" />
         <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/maps.css" />
     </head>
 
     <body>
@@ -55,7 +54,7 @@ width=device-width, height=device-height, target-densitydpi=device-dpi"
         <div id="app">
             <div class="view view-main">
                 <div class="page" data-name="home">
-                    <div class="homepage-content">
+                    <div class="page-content">
                         <iframe
                             class="gmaps"
                             src="ar.html"
@@ -64,8 +63,14 @@ width=device-width, height=device-height, target-densitydpi=device-dpi"
                         ></iframe>
                         <div class="footer">
                             <div class="button_home">
-                                <a href="/home/" data-transition="f7-fade">
-                                    <i class="icon f7-icons size-40">house</i>
+                                <a
+                                    href="/home/"
+                                    class="link"
+                                    data-transition="f7-fade"
+                                >
+                                    <i class="icon f7-icons size-45 iactive"
+                                        >house</i
+                                    >
                                 </a>
                             </div>
 
@@ -75,7 +80,7 @@ width=device-width, height=device-height, target-densitydpi=device-dpi"
                                     class="link external"
                                     data-transition="f7-fade"
                                 >
-                                    <i class="icon f7-icons size-46"
+                                    <i class="icon f7-icons size-45 lactive"
                                         >camera_fill</i
                                     >
                                 </a>
@@ -86,7 +91,7 @@ width=device-width, height=device-height, target-densitydpi=device-dpi"
                                     class="link external"
                                     data-transition="f7-fade"
                                 >
-                                    <i class="icon f7-icons size-40"
+                                    <i class="icon f7-icons size-45 iactive"
                                         >map_pin_ellipse</i
                                     >
                                 </a>

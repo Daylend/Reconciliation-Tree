@@ -7,35 +7,35 @@ var app = new Framework7({
         },
         {
             path: "/page1/",
-            url: "pages/page1.html"
+            url: "page1.html"
         },
         {
             path: "/page2/",
-            url: "pages/page2.html"
+            url: "page2.html"
         },
         {
             path: "/page3/",
-            url: "pages/page3.html"
+            url: "page3.html"
         },
         {
             path: "/page4/",
-            url: "pages/page4.html"
+            url: "page4.html"
         },
         {
             path: "/page5/",
-            url: "pages/page5.html"
+            url: "page5.html"
         },
         {
             path: "/page6/",
-            url: "pages/page6.html"
+            url: "page6.html"
         },
         {
             path: "/page7/",
-            url: "pages/page7.html"
+            url: "page7.html"
         },
         {
             path: "/page8/",
-            url: "pages/page8.html"
+            url: "page8.html"
         },
         {
             path: "/page9/",
@@ -43,11 +43,11 @@ var app = new Framework7({
         },
         {
             path: "/page10/",
-            url: "pages/page10.html"
+            url: "page10.html"
         },
         {
             path: "/page11/",
-            url: "pages/page11.html"
+            url: "plantindex.html"
         },
         {
             path: "/ar/",
@@ -65,11 +65,11 @@ console.log("bonjour");
 
 var $$ = Dom7;
 
-var audio = new Audio("audio/oki.wav");
-var audio2 = new Audio("audio/pinus.wav");
-var audio4 = new Audio("audio/amelan.wav");
-var audio6 = new Audio("audio/popu.wav");
-var audio8 = new Audio("audio/salix.wav");
+var audio = new Audio("../audio/oki.wav");
+var audio2 = new Audio("../audio/pinus.wav");
+var audio4 = new Audio("../audio/amelan.wav");
+var audio6 = new Audio("../audio/popu.wav");
+var audio8 = new Audio("../audio/salix.wav");
 
 function playAudio() {
     audio.play();

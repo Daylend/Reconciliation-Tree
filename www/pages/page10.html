@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+        />
+        <title>Blank App</title>
+        <link rel="stylesheet" href="./css/maps.css" />
+    </head>
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
-	<title>Blank App</title>
-	<link rel="stylesheet" href="./css/maps.css" />
-</head>
+    <body>
+        <div id="app">
+            <div class="view view-main">
+                <div class="page" data-name="page10">
+                    <div class="page10-content page-content">
+                        <div class="map_frame">
+                            <iframe
+                                src="https://www.google.com/maps/d/embed?mid=1CSQEA9kV0ZrNwccmuJUGYyffovKlze02"
+                                width="360"
+                                height="550"
+                            ></iframe>
+                        </div>
 
-<body>
+                        <div class="footer">
+                            <div class="button_home">
+                                <a href="/" data-transition="f7-fade">
+                                    <i class="icon f7-icons size-40">house</i>
+                                </a>
+                            </div>
 
-	<div id=app>
-		<div class="view view-main">
-
-			<div class="page" data-name="page10">
-				<div class="page10-content">
-					<div class="map_frame"><iframe src="https://www.google.com/maps/d/embed?mid=1CSQEA9kV0ZrNwccmuJUGYyffovKlze02" width="360" height="550"></iframe>
-					</div>
-
-					<div class="footer">
-						<div class="button_home">
-							<a href="/" data-transition="f7-fade">
-								<i class="icon f7-icons size-40">house</i>
-							</a>
-						</div>
-
-						<div class="button_scanner">
-							<a href="ar.html" class="link external" data-transition="f7-fade">
-								<i class="icon f7-icons size-45">camera_fill</i>
-							</a>
-						</div>
-						<div class="button_map">
-							<a href="map.html" class="link external" data-transition="f7-fade">
-								<i class="icon f7-icons size-40">map_pin_ellipse</i>
-							</a>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript" language="javascript">
-		document.querySelector(".gmaps").height = window.innerHeight * 0.97;
-
-	</script>
-	<script type="text/javascript" src="cordova.js"></script>
-</body>
-
+                            <div class="button_scanner">
+                                <a
+                                    href="ar.html"
+                                    class="link external"
+                                    data-transition="f7-fade"
+                                >
+                                    <i class="icon f7-icons size-45"
+                                        >camera_fill</i
+                                    >
+                                </a>
+                            </div>
+                            <div class="button_map">
+                                <a
+                                    href="map.html"
+                                    class="link external"
+                                    data-transition="f7-fade"
+                                >
+                                    <i class="icon f7-icons size-40"
+                                        >map_pin_ellipse</i
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" language="javascript">
+            document.querySelector(".gmaps").height = window.innerHeight * 0.97;
+        </script>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
 </html>
